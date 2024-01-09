@@ -5,7 +5,6 @@ import Footer from './components/footer/index';
 const inter = Inter({ subsets: ['latin'] })
 
 import { dir } from 'i18next'
-
 import { languages } from '../i18n/settings';
 
 export const metadata = {
