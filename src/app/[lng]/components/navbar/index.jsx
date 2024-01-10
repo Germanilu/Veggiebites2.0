@@ -1,5 +1,5 @@
 import Link             from 'next/link';
-
+import { LanguageSwitcher } from '../language-switcher';
 import './index.scss';
 
 export default function Navbar() {
@@ -20,6 +20,7 @@ export default function Navbar() {
             <Link className="item" href="/contact-us">Contact Us</Link>
           </li>
         </ul>
+        <LanguageSwitcher />
        </nav>
     )
 }
