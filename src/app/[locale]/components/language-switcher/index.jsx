@@ -1,17 +1,19 @@
-import { useTranslations }  from "next-intl";
-import Link                 from "next-intl/link";
+'use client'
+
+import {useRouter,usePathname} from '@/navigation'
 
 export default function LanguageSwitcher() {
+  const pathname = usePathname();
+  const router = useRouter();
 
   return(
     <div className="language-switcher-design">
-       <Link href="/" locale="en">
+       <div onClick={() => router.replace(pathname, { locale: "en" })}>
           EN
-        </Link>{" "}
-        |{" "}
-        <Link href="/" locale="es">
+        </div>
+        <div onClick={() => router.replace(pathname, { locale: "es" })}>
           ES
-        </Link>
+        </div>
     </div>
   )
 }
