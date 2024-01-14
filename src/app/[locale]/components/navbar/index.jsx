@@ -1,4 +1,5 @@
-import Link             from 'next/link';
+import {Link}             from '../../../../navigation';
+
 import  LanguageSwitcher  from '../language-switcher';
 import { useTranslations } from "next-intl";
 import './index.scss';
