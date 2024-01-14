@@ -1,7 +1,16 @@
 {
-    "Index": {
-      "title": "Hello world!!",
-      "subtitle": "How is it going?",
-      "alertMessage": "Something went wrong!"
+    "Home": {
+      "title": "Main title",
+      "first-section-title": "First section title",
+      "second-section-title": "Second section title"
+    },
+    "Navbar":{
+      "home": "Home",
+      "about-us":"About",
+      "menu": "Menu",
+      "contact-us":"Contact Us"
+    },
+    "About":{
+      "title":"About main title"
     }
   }

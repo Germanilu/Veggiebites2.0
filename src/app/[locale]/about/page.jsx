@@ -1,9 +1,8 @@
 import './page.scss';
-import { useTranslation } from '../../i18n';
-export default async function About({ params: { lng } }){
+import { useTranslations } from "next-intl";
 
-  const { t } = await useTranslation(lng, 'about')
-
+export default function About(){
+  const t = useTranslations("About");
   return (
     <div className="about-design">
       <h1>{t('title')}</h1>

@@ -1,7 +1,16 @@
 {
-    "Index": {
-      "title": "holaquetal",
-      "subtitle": "eeee",
-      "alertMessage": "yokse es une rror"
-    }
+  "Home": {
+    "title": "TITULO PRINCIPAL",
+    "first-section-title": "TITULO PRIMERA SECCION",
+    "second-section-title": "TITULO SEGUNDA SECCION"
+  },
+  "Navbar":{
+    "home": "Home",
+    "about-us":"Sobre nosotros",
+    "menu": "Menu",
+    "contact-us":"Contacto"
+  },
+  "About":{
+    "title":"Titulo pagina sobre nosotros"
   }
+}

@@ -1,6 +1,7 @@
 import Navbar from './components/navbar/index';
 import Footer from './components/footer/index';
 import "./globals.css";
+
 import { Inter } from "next/font/google";
 import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";

@@ -1,31 +1,20 @@
 import { useTranslations } from "next-intl";
-import Link from "next-intl/link";
-import AlertMessage from "./AlertMessage";
+
 
 export default function Home() {
-  const t = useTranslations("Index");
+  const t = useTranslations("Home");
 
   return (
-    <div>
-      <div>
-        <Link href="/" locale="en">
-          In english
-        </Link>{" "}
-        |{" "}
-        <Link href="/" locale="fi">
-          In Finnish
-        </Link>
-        <br />
-        <br />
+    <div className='home-design'>
+      <div className="hero-section">
+        <h1 className='hero-title'>{t('title')}</h1>
       </div>
-      <div>
-        <p>{t("title")}</p>
-        <p>{t("subtitle")}</p>
+      <div className="first-section">
+        <h2>{t('first-section-title')}</h2>
       </div>
-      <div>
-        <br />
-        <AlertMessage message={t("alertMessage")} />
+      <div className="second-section">
+        <h2>{t('second-section-title')}</h2>
       </div>
     </div>
-  );
+  )
 }
