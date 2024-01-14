@@ -3,8 +3,7 @@ import  LanguageSwitcher  from '../language-switcher';
 import { useTranslations } from "next-intl";
 import './index.scss';
 
-export default function Navbar({lang}) {
-  console.log(lang)
+export default function Navbar() {
   const t = useTranslations("Navbar");
 
     return(
@@ -14,7 +13,7 @@ export default function Navbar({lang}) {
             <Link className="item" href="/">{t('home')}</Link>
           </li>
           <li className="list-item">
-            <Link className="item" href={`${lang}/about`} >{t('about-us')}</Link>
+            <Link className="item" href="/about" >{t('about-us')}</Link>
           </li>
           <li className="list-item">
             <Link className="item" href="/menu">{t('menu')}</Link>
