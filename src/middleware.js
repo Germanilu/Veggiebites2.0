@@ -5,10 +5,11 @@ export default createMiddleware({
   locales: ['en', 'es'],
  
   // Used when no locale matches
-  defaultLocale: 'en'
+  defaultLocale: 'en',
+  localePrefix: 'always' // This is the default
 });
  
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/((?!api_next.*\\..*).*)']
+  matcher: ['/', '/(en|es)/:path*']
 };
