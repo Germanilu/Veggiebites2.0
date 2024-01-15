@@ -15,5 +15,19 @@
   },
   "Contact-us":{
     "title":"Contacta con nosotros Titulo"
+  },
+  "Contact-us-component":{
+    "title":"Contacto",
+    "subtitle":"Subtitulo",
+    "name-tag":"name",
+    "name-placeholder":"name",
+    "email-tag":"email",
+    "email-placeholder":"email",
+    "message-tag":"mensaje",
+    "message-placeholder":"mensaje",
+    "send": "Enviar",
+    "loading":"Cargando",
+    "success-alert":"Gracias. Nos pondremos en contacto contigo tan pronto como sea posible",
+    "unsuccess-alert":"¡Ah, algo salió mal! Por favor, inténtalo de nuevo."
   }
 }

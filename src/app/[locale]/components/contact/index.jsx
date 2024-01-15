@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 export default function Contact() {
   const formRef = useRef();
-  const t = useTranslations("Contact-us");
+  const t = useTranslations("Contact-us-component");
 
   //State
   const [form, setForm] = useState({
@@ -49,7 +49,7 @@ export default function Contact() {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert(t('success-alert'));
 
           setForm({
             name: "",
@@ -60,8 +60,7 @@ export default function Contact() {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          alert(t('unsuccess-alert'));
         }
       );
   };
@@ -71,42 +70,42 @@ export default function Contact() {
     <div className='contact-design' >
       <div className="contact-form">
         <p className='text'>{t('title')}</p>
-        <h3 className='subtitle'>CONTACT-SUBTITLE</h3>
+        <h3 className='subtitle'>{t('subtitle')}</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
           className='form'
         >
           <label className='form-label'>
-            <span className='name'>Text</span>
+            <span className='name'>{t('name-tag')}</span>
             <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder='Text'
+              placeholder={t('name-placeholder')}
               className='input'
             />
           </label>
           <label className='form-label'>
-            <span className='email'>Text</span>
+            <span className='email'>{t('email-tag')}</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder='Text'
+              placeholder={t('email-placeholder')}
               className='input'
             />
           </label>
           <label className='form-label'>
-            <span className='message'>Text</span>
+            <span className='message'>{t('message-tag')}</span>
             <textarea
               rows={7}
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='Text'
+              placeholder={t('message-placeholder')}
               className='input textarea'
             />
           </label>
@@ -115,7 +114,7 @@ export default function Contact() {
             type='submit'
             className='button'
           >
-            {loading ? "One second..." : `Text`}
+            {loading ? t('loading') : t('send')}
           </button>
         </form>
       </div>
