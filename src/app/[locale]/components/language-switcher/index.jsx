@@ -1,22 +1,19 @@
-import Link from 'next/link'
-import { Trans } from 'react-i18next/TransWithoutContext'
-import { languages } from '../../../i18n/settings'
-import { useTranslation } from '../../../i18n'
+'use client'
 
-export const LanguageSwitcher = async ({ lng }) => {
-  const { t } = await useTranslation(lng, 'footer');
-  
-  return (
-    <>
-      {languages.filter((l) => lng !== l).map((l, index) => {
-        return (
-          <span key={l}>
-            <Link href={`/${l}`}>
-              {l}
-            </Link>
-          </span>
-        )
-      })}
-    </>
+import {useRouter,usePathname} from '@/navigation'
+
+export default function LanguageSwitcher() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  return(
+    <div className="language-switcher-design">
+       <div onClick={() => router.replace(pathname, { locale: "en" })}>
+          EN
+        </div>
+        <div onClick={() => router.replace(pathname, { locale: "es" })}>
+          ES
+        </div>
+    </div>
   )
 }

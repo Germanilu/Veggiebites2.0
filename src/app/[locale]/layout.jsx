@@ -1,6 +1,10 @@
+import pick from 'lodash/pick';
+import {NextIntlClientProvider, useMessages} from 'next-intl';
+
 import Navbar from './components/navbar/index';
 import Footer from './components/footer/index';
 import "./globals.css";
+
 import { Inter } from "next/font/google";
 import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -14,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children, params }) {
   const locale = useLocale();
-
+  const messages = useMessages();
   // Show a 404 error if the user requests an unknown locale
   if (params.locale !== locale) {
     notFound();
@@ -23,9 +27,11 @@ export default function RootLayout({ children, params }) {
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <Navbar/>
-        {children}
-        <Footer/>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Navbar/>
+          {children}
+          <Footer/>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

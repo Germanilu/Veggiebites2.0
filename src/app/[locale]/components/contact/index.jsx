@@ -3,9 +3,11 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import './index.scss';
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
   const formRef = useRef();
+  const t = useTranslations("Contact-us");
 
   //State
   const [form, setForm] = useState({
@@ -68,7 +70,7 @@ export default function Contact() {
   return (
     <div className='contact-design' >
       <div className="contact-form">
-        <p className='text'>CONTACT-TITLE</p>
+        <p className='text'>{t('title')}</p>
         <h3 className='subtitle'>CONTACT-SUBTITLE</h3>
         <form
           ref={formRef}
