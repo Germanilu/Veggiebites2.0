@@ -22,8 +22,8 @@ export default function Navbar() {
           <li className="list-item">
             <Link className="item" href="/contact-us">{t('contact-us')}</Link>
           </li>
+          <LanguageSwitcher />
         </ul>
-        <LanguageSwitcher />
        </nav>
     )
 }
