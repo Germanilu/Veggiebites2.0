@@ -1,5 +1,5 @@
-import Contact              from '../components/contact/index';
 import { useTranslations }  from "next-intl";
+import Contact              from '../components/contact/index';
 
 import './page.scss'
 

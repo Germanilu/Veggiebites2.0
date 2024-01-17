@@ -1,13 +1,11 @@
-import pick from 'lodash/pick';
 import {NextIntlClientProvider, useMessages} from 'next-intl';
+import Navbar                                from './components/navbar/index';
+import Footer                                from './components/footer/index';
+import { Inter }                             from "next/font/google";
+import { useLocale }                         from "next-intl";
+import { notFound }                          from "next/navigation";
 
-import Navbar from './components/navbar/index';
-import Footer from './components/footer/index';
 import "./globals.css";
-
-import { Inter } from "next/font/google";
-import { useLocale } from "next-intl";
-import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 

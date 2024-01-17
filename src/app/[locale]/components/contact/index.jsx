@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState }        from "react";
+import emailjs                            from "@emailjs/browser";
+import { useTranslations }                from "next-intl";
+
 import './index.scss';
-import { useTranslations } from "next-intl";
 
 export default function Contact() {
   const formRef = useRef();

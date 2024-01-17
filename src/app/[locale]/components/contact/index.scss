@@ -1,3 +1,5 @@
+@import "../../../utilities/variables.scss";
+
 .contact-design{
   display: flex;
   flex-direction: row-reverse;
@@ -5,12 +7,12 @@
   align-items: center;
   .contact-form{
       padding: 2rem;
-      border: 1px solid #353935;
+      border: 1px solid $onyx_grey;
       position: relative;
       padding-left: 3rem;
       min-width: 30%;
       .text, .subtitle{
-          color: #353935;
+          color: $onyx_grey;
           font-size: 1.5rem;
       }
       .subtitle{
@@ -26,12 +28,12 @@
               flex-direction: column;
               .input{
                   all: unset;
-                  border-bottom: 1px solid #353935;
+                  border-bottom: 1px solid $onyx_grey;
                   width: 50%;
               }
               .textarea{
                   width: 90%;
-                  border: 1px solid #353935;
+                  border: 1px solid $onyx_grey;
               }
           }
       }

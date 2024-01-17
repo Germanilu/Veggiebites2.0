@@ -1,6 +1,6 @@
-
 import { useTranslations } from "next-intl";
 
+import './page.scss';
 
 export default function Home() {
   const t = useTranslations("Home");

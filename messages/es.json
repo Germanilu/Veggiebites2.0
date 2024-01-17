@@ -29,5 +29,8 @@
     "loading":"Cargando",
     "success-alert":"Gracias. Nos pondremos en contacto contigo tan pronto como sea posible",
     "unsuccess-alert":"¡Ah, algo salió mal! Por favor, inténtalo de nuevo."
+  },
+  "Footer":{
+    "title": "Footer"
   }
 }
