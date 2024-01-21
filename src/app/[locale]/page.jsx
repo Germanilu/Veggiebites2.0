@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-
+import Map from "@/app/[locale]/components/google-map-location/index";
 import './page.scss';
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
       <div className="second-section">
         <h2>{t('second-section-title')}</h2>
       </div>
+      <Map/>
     </div>
   )
 }
