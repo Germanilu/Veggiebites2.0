@@ -1,3 +1,4 @@
+'use client'
 import { useTranslations } from "next-intl";
 import Map from "@/app/[locale]/components/google-map-location/index";
 import ScrollToTop from "@/app/[locale]/components/scroll-to-top/index";
@@ -5,6 +6,7 @@ import './page.scss';
 
 export default function Home() {
   const t = useTranslations("Home");
+
 
   return (
     <div className='home-design'>
@@ -18,7 +20,7 @@ export default function Home() {
         <h2>{t('second-section-title')}</h2>
       </div>
       <Map/>
-      <ScrollToTop/>
+      <ScrollToTop />
     </div>
   )
 }

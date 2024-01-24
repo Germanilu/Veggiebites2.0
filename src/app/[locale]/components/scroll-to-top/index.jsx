@@ -1,14 +1,38 @@
 'use client'
-import { FaArrowUp } from "react-icons/fa";
+
+import { FaArrowUp }            from "react-icons/fa";
+import { useEffect, useState }  from "react";
+
 import './index.scss';
 
+/**
+ * @component 
+ * Scroll to top button, will appear when window scroll + 100px
+ * 
+ * @example
+ * <ScrollToTop/>
+ * 
+ */
 export default function ScrollToTop() {
 
-  const topFunction = () => {
+  const [scrollToTopButton, setScrollToTopButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 100 ? setScrollToTopButton(true) : setScrollToTopButton(false)
+    })
+  },[])
+
+  const scrollUp = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   return (
-    <div onClick={topFunction} className="scroll-to-top"><FaArrowUp /></div>
+    <>
+      {
+        scrollToTopButton &&
+        <div onClick={scrollUp} className="scroll-to-top"><FaArrowUp /></div>
+      }
+    </>
   )
 }
