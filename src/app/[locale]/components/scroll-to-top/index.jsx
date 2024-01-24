@@ -1,5 +1,5 @@
 'use client'
-
+import { FaArrowUp } from "react-icons/fa";
 import './index.scss';
 
 export default function ScrollToTop() {
@@ -9,6 +9,6 @@ export default function ScrollToTop() {
   }
 
   return (
-    <div onClick={topFunction} className="scroll-to-top">Back to top</div>
+    <div onClick={topFunction} className="scroll-to-top"><FaArrowUp /></div>
   )
 }
