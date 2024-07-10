@@ -1,0 +1,25 @@
+.blog{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .articles-container{
+        border: 1px solid red;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .article-container{
+            border: 1px solid blue;
+            padding: 2rem 1rem;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
