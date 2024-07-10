@@ -1,5 +1,3 @@
-'use client'
-
 import {useRouter,usePathname} from '@/navigation';
 
 import './index.scss';
