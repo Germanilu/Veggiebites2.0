@@ -1,17 +1,43 @@
 @import "../../../utilities/variables.scss";
 
 .navbar{
-  width: 100%;
+  width: 60%;
   background-color: transparent;
   padding: 1rem 0rem;
-  border-bottom: 2px solid $black;
   position: fixed;
+  right: 0;
   .navbar-list{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
+    align-items: center;
+    .list-item{
+      width: max-content;
+      .item{
+       position: relative;
+       color: #424242c6;
+       font-weight: 500;
+       font-size: 18px;
+      }
+      .item::after{
+        content: "";
+        position: absolute;
+        background-color: #c04038;
+        height: 0.1em;
+        left: 0;
+        width: 0%;
+        bottom: -0.2em;
+        transition: 0.5s;
+      }
+      .item:hover::after{
+        width: 100%;
+      }
+      .item:hover{
+        color: black;
+      }
+    }
   }
 }
 

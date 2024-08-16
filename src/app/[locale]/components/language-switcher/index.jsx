@@ -45,7 +45,7 @@ export default function LanguageSwitcher() {
     <div className="language-switcher-design">
       <div className="current-language" onClick={() => setIsOpen(!isOpen)}>
         <Image src={flags[locale]} alt={languages[locale]} />
-        <IoMdArrowDropdown className='arrow1' size={30} color='#FEFBF6' />
+        <IoMdArrowDropdown className='arrow1' size={30} color='#666666c6' />
       </div>
       {isOpen && (
         <div className="dropdown-content">
