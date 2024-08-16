@@ -14,7 +14,9 @@ export default function Home() {
   return (
     <div className='home-design'>
       <div className="hero-section">
-        <h1 className='hero-title'>{t('title')}</h1>
+        <h1 className='hero-title'>{t('title')}
+          
+        </h1>
       </div>
       <div className="first-section">
         <h2>{t('first-section-title')}</h2>
