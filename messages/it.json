@@ -1,0 +1,12 @@
+{
+    "Hero":{
+        "slogan":"Your healthy food"
+      },
+      "Navbar":{
+        "home": "Home",
+        "about-us":"Dicono di Noi",
+        "menu": "Menu",
+        "special":"Specials",
+        "contact-us":"Contatto"
+      }
+}

@@ -4,10 +4,14 @@
       "first-section-title": "First section title",
       "second-section-title": "Second section title"
     },
+    "Hero":{
+      "slogan":"Your healthy food"
+    },
     "Navbar":{
       "home": "Home",
       "about-us":"About",
       "menu": "Menu",
+      "special":"Specials",
       "contact-us":"Contact Us"
     },
     "About":{

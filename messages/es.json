@@ -4,10 +4,14 @@
     "first-section-title": "TITULO PRIMERA SECCION",
     "second-section-title": "TITULO SEGUNDA SECCION"
   },
+  "Hero":{
+    "slogan":"Tu Comida Saludable"
+  },
   "Navbar":{
     "home": "Home",
     "about-us":"Sobre nosotros",
     "menu": "Menu",
+    "special":"Specials",
     "contact-us":"Contacto"
   },
   "About":{

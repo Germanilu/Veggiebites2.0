@@ -1,7 +1,9 @@
 'use client'
 import {motion} from "framer-motion";
+import { useTranslations } from "next-intl";
 import './index.scss';
 const Hero = () => {
+    const t = useTranslations("Hero");
 
     return(
         <div className="hero-section">
@@ -22,7 +24,7 @@ const Hero = () => {
                   transition={{delay:1, duration:0.75}}
                   initial="hidden"
                   animate="visible"
-                >Tu Comida Saludable</motion.p>
+                >{t('slogan')}</motion.p>
             </motion.div>
         </div>
     )

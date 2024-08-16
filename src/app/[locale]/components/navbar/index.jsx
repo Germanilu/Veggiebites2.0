@@ -50,6 +50,9 @@ export default function Navbar() {
                 <Link className="item" href="/">{t('home')}</Link>
               </li>
               <li className="list-item">
+                <Link className="item" href="/about" >{t('special')}</Link>
+              </li>
+              <li className="list-item">
                 <Link className="item" href="/about" >{t('about-us')}</Link>
               </li>
               <li className="list-item">
