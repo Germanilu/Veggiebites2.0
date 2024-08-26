@@ -1,6 +1,7 @@
 'use client'
 import {motion} from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";3
+import Carousel from "../carousel";
 import './index.scss';
 const AboutUs = () => {
     const t = useTranslations("About");
@@ -24,7 +25,7 @@ const AboutUs = () => {
             <p>{t('p3')}</p>
             </motion.div>
             <div className="carousel">
-                
+                <Carousel/>
             </div>
         </div>
     )
