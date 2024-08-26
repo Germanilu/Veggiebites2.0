@@ -15,7 +15,10 @@
     "contact-us":"Contacto"
   },
   "About":{
-    "title":"Titulo pagina sobre nosotros"
+        "title":"Nuestra Historia",
+        "p1":"Desde hace 15 años, nuestro restaurante vegetariano ha sido un lugar donde el amor por la comida y la atención al detalle se combinan para ofrecerte una experiencia auténtica. Nos enorgullece hacer las cosas con el mismo cariño que el primer día, seleccionando los mejores ingredientes y cuidando cada aspecto de lo que hacemos.",
+        "p2":"Somos un equipo que trabaja como una familia, y esa calidez se refleja en la atención que brindamos. Creemos en la importancia de cada pequeño detalle y en la creación de momentos especiales para nuestros comensales.",
+        "p3":"Gracias por ser parte de nuestra historia y por permitirnos compartir nuestra pasión contigo."
   },
   "Contact-us":{
     "title":"Contacta con nosotros Titulo"

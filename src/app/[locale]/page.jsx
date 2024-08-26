@@ -3,6 +3,7 @@ import Map from "@/app/[locale]/components/google-map-location/index";
 import ScrollToTop from "@/app/[locale]/components/scroll-to-top/index";
 import Hero from "./components/hero";
 import Specials from "./components/specials";
+import AboutUs from "./components/about-us";
 import './page.scss';
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function Home() {
     <div className='home-design'>
       <Hero/>
       <Specials/>
+      <AboutUs/>
       <Map />
       <ScrollToTop />
     </div>

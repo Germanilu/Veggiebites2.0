@@ -15,7 +15,10 @@
       "contact-us":"Contact Us"
     },
     "About":{
-      "title":"About main title"
+      "title":"About Us",
+      "p1":"For 15 years, our vegetarian restaurant has been a place where love for food and attention to detail come together to offer you an authentic experience. We take pride in doing things with the same care as on our first day, selecting the finest ingredients and carefully tending to every aspect of what we do.",
+      "p2":"We are a team that works like a family, and this warmth is reflected in the service we provide. We believe in the importance of every little detail and in creating special moments for our customers.",
+      "p3":"Thank you for being part of our story and for allowing us to share our passion with you."
     },
     "Contact-us":{
       "title":"Contact Us TITLE"
