@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 import Slider from "react-slick";
 import Image from 'next/image';
 import './index.scss';
@@ -49,7 +50,16 @@ const Carousel = () => {
     ]
   };
   return (
-    <div className="slider-container">
+    <motion.div className="slider-container"
+        variants={{
+          hidden:{opacity:0, y:75},
+          visible:{opacity:1,y:0},          
+      }}
+      transition={{delay:1, duration:0.5}}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <Slider {...settings}>
         <div className="container-div">
         <Image className="img" src={pict1} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
@@ -76,7 +86,7 @@ const Carousel = () => {
         <Image className="img" src={pict8} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
         </div>
       </Slider>
-    </div>
+    </motion.div>
   );
 }
 
