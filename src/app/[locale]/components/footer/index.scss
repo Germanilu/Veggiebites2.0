@@ -1,7 +1,6 @@
 @import "../../../utilities/variables.scss";
 
 .footer-design {
-  position: relative;
   width: 90%;
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -10,8 +9,6 @@
   .footer-container {
     width: 100%;
     height: 200px;
-    position: absolute;
-    bottom: 0;
     background-color: #f4f8f9;
     display: flex;
     flex-direction: column;
@@ -19,9 +16,12 @@
     .info {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 1rem;
       .info-box {
-        margin-top: 1rem;
-        width: 25%;
+        width: max-content;
         border-right: 1px solid black;
         display: flex;
         height: 100%;
@@ -35,7 +35,6 @@
         }
 
         p {
-          width: 50%;
           padding-left: 1rem;
         }
       }
@@ -51,6 +50,36 @@
           border-right: 1px solid black;
           padding-right: .5rem;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: '768px') {
+  .footer-design {
+    .footer-container{
+      height: 100%;
+      flex-direction: row;
+      padding-bottom: 1rem;
+      .info{
+        font-size: 14px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        .info-box {
+          border-right: none;
+          &.socials {
+            justify-content: center;
+            gap: 1rem;
+          }
+        }
+      }
+      .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 0rem;
+        font-size: 14px;
       }
     }
   }

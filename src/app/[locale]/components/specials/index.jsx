@@ -14,7 +14,7 @@ import './index.scss';
 const Specials = () => {
     const t = useTranslations("Specials");
     return(
-        <motion.div id="special" class="contenedor-special"
+        <motion.div id="special" className="contenedor-special"
         variants={{
             hidden:{opacity:0, y:75},
             visible:{opacity:1,y:0},
