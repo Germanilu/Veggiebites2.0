@@ -38,6 +38,11 @@
     "unsuccess-alert":"¡Ah, algo salió mal! Por favor, inténtalo de nuevo."
   },
   "Footer":{
-    "title": "Footer"
+    "street":"Via Mario Lupo 10 24129 Bergamo Alta BG",
+    "phone":"Telefono: +39 3409999999",
+    "email":"info@veggiebites.com",
+    "rights": "@2024 Todos los Derechos Reservados a VeggieBites",
+    "privacy": "Política de Privacidad",
+    "conditions": "Términos y Condiciones"
   }
 }

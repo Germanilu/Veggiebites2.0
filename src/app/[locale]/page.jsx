@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import Map from "@/app/[locale]/components/google-map-location/index";
 import ScrollToTop from "@/app/[locale]/components/scroll-to-top/index";
 import Hero from "./components/hero";
 import Specials from "./components/specials";
@@ -19,7 +18,6 @@ export default function Home() {
       <Hero/>
       <Specials id="special"/>
       <AboutUs/>
-      <Map />
       <ScrollToTop />
     </div>
   )

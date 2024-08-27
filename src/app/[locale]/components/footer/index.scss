@@ -1,9 +1,57 @@
 @import "../../../utilities/variables.scss";
 
-.footer-design{
-    border: 1px solid $black;
+.footer-design {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 2rem;
+
+  .footer-container {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    background-color: #f4f8f9;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 0rem;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    .info {
+      display: flex;
+      flex-direction: row;
+      .info-box {
+        margin-top: 1rem;
+        width: 25%;
+        border-right: 1px solid black;
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+        align-items: center;
+
+        &.socials {
+          border-right: none;
+          justify-content: center;
+          gap: 1rem;
+        }
+
+        p {
+          width: 50%;
+          padding-left: 1rem;
+        }
+      }
+    }
+    .container{
+      margin-top: 3rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .policies{
+        .policy{
+          border-right: 1px solid black;
+          padding-right: .5rem;
+        }
+      }
+    }
+  }
 }
