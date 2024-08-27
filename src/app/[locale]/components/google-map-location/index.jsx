@@ -31,9 +31,10 @@ export default function Map(){
       const { Marker } = await loader.importLibrary('marker');
       
       const position = {
-        lat: 41.3917722839596,
-        lng: 2.1648703582061923
+        lat: 45.70348487635367,
+        lng: 9.663386349414681
       }
+
 
       //map options
       const mapOptions = {
