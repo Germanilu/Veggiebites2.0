@@ -1,13 +1,18 @@
 @import "../../../utilities/variables.scss";
 
 .navbar{
-  width: 60%;
+  width: 100%;
   background-color: transparent;
   padding: 1rem 0rem;
   position: fixed;
   right: 0;
+  display: flex;
+  justify-content: flex-end;
+  &.scroll{
+    background-color: #f4f8f9;
+  }
   .navbar-list{
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

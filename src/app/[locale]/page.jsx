@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className='home-design'>
       <Hero/>
-      <Specials/>
+      <Specials id="special"/>
       <AboutUs/>
       <Map />
       <ScrollToTop />

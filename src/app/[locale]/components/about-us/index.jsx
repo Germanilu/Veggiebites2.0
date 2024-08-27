@@ -7,7 +7,7 @@ const AboutUs = () => {
     const t = useTranslations("About");
 
     return(
-        <div className="about-us-section">
+        <div className="about-us-section" id="about">
             <motion.div 
             className="text"
             variants={{

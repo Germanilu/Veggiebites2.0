@@ -4,7 +4,7 @@ import {Link}               from '../../../../navigation';
 import  LanguageSwitcher    from '../language-switcher';
 import { useTranslations }  from "next-intl";
 import { useSelector }      from 'react-redux';
-import { useState }         from 'react';
+import { useEffect, useState }         from 'react';
 import { IoMenu }           from "react-icons/io5";
 import { RxCross2 }         from "react-icons/rx";
 
@@ -14,6 +14,22 @@ export default function Navbar() {
   const t                       = useTranslations("Navbar");
   const [openMenu, setOpenMenu] = useState(false);
   const isMobile = useSelector(state => state.responsive.isMobile);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  },[])
 
   return (
     <>
@@ -44,16 +60,16 @@ export default function Navbar() {
             </div>
           </nav>
           :
-          <nav className="navbar">
+          <nav className={`navbar ${scrolled ? 'scroll':""}`}>
             <ul className="navbar-list">
               <li className="list-item">
                 <Link className="item" href="/">{t('home')}</Link>
               </li>
               <li className="list-item">
-                <Link className="item" href="/about" >{t('special')}</Link>
+                <Link className="item" href="/#special" >{t('special')}</Link>
               </li>
               <li className="list-item">
-                <Link className="item" href="/about" >{t('about-us')}</Link>
+                <Link className="item" href="/#about" >{t('about-us')}</Link>
               </li>
               <li className="list-item">
                 <Link className="item" href="/menu">{t('menu')}</Link>
