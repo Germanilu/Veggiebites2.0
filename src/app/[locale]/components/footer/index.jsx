@@ -19,7 +19,10 @@ export default function Footer() {
         <div className="info">
           <div className="info-box">
             <FaMapMarkerAlt color="#62a5b8" size="40" />
+            <div>
             <p>{t('street')}</p>
+            <p>{t('street1')}</p>
+            </div>
           </div>
           <div className="info-box">
             <FaPhone color="#62a5b8" size="40" />
