@@ -7,7 +7,7 @@ import { useLocale }                         from "next-intl";
 import { notFound }                          from "next/navigation";
 import { Providers }                         from "../Redux/provider";
 import "./globals.css";
-const inter = Merriweather({ subsets: ["latin"], weight: ['300','400', '700','900'] });
+const mettiweather = Merriweather({ subsets: ["latin"], weight: ['300','400', '700','900'] });
 
 export const metadata = {
   title: "Default title",
@@ -24,7 +24,7 @@ export default function RootLayout({ children, params }) {
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={mettiweather.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
             <ResponsiveLayout />
