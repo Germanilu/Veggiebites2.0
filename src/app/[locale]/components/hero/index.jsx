@@ -7,10 +7,6 @@ import { useEffect } from 'react';
 const Hero = () => {
     const t = useTranslations("Hero");
     const isMobile = useSelector(state => state.responsive.isMobile);
-
-    useEffect(() => {
-        console.log(isMobile)
-    },[isMobile])
     return(
         <div className="hero-section">
             <motion.div className="main-container"
