@@ -8,3 +8,13 @@
         }
     }
 }
+
+@media screen and (max-width: '767px') {
+    .slider-container{
+        .slick-slider{
+            .slick-arrow{
+                display: none !important;
+            }
+        }
+    }
+}

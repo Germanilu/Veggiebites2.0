@@ -22,6 +22,7 @@ const Carousel = () => {
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -37,7 +38,7 @@ const Carousel = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
+          initialSlide: 2,
         }
       },
       {
