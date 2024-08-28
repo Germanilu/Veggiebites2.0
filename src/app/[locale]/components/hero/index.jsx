@@ -3,7 +3,7 @@ import { useSelector }      from 'react-redux';
 import {motion} from "framer-motion";
 import { useTranslations } from "next-intl";
 import './index.scss';
-import { useEffect } from 'react';
+
 const Hero = () => {
     const t = useTranslations("Hero");
     const isMobile = useSelector(state => state.responsive.isMobile);
