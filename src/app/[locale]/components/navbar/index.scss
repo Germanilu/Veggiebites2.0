@@ -51,6 +51,8 @@
   .navbar{
     padding: .5rem 0rem;
     border-bottom: none;
+    height: 7vh;
+    transition: height 0.3s ease-in-out;
     &.open{
       background-color: #f4f8f9;
       height: 100vh;
