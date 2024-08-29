@@ -7,7 +7,7 @@ import { useSelector }      from 'react-redux';
 import { useEffect, useState }         from 'react';
 import { IoMenu }           from "react-icons/io5";
 import { RxCross2 }         from "react-icons/rx";
-
+import {motion} from "framer-motion";
 import './index.scss';
 
 export default function Navbar() {
@@ -35,27 +35,41 @@ export default function Navbar() {
     <>
       {
         isMobile ?
-          <nav className="navbar">
-            <div className='menu-action' onClick={() => setOpenMenu(!openMenu)}>
-              {openMenu ? <RxCross2 className='burger-menu-icon' /> : <IoMenu className='burger-menu-icon' />}
+          <nav className={`navbar ${openMenu ? "open":"close"}`}
+          >
+            <div className='menu-action' >
+              {openMenu ? <RxCross2 className='burger-menu-icon' size={40} onClick={() => setOpenMenu(!openMenu)} /> : <IoMenu className='burger-menu-icon' size={40} onClick={() => setOpenMenu(!openMenu)} />}
               {openMenu &&
-                <ul className='mobile-navbar-box'>
+                <motion.ul className='mobile-navbar-box'
+                
+                variants={{
+                  open:{
+                    x:"0%",
+                  },
+                  closed:{
+                    x:'100%',
+                  },
+                }}
+                initial="closed"
+                animate="open"
+                
+                >
                   <li className="list-item">
-                    <Link className="item" href="/">{t('home')}</Link>
+                    <Link className="item" href="/" onClick={() => setOpenMenu(!openMenu)}>{t('home')}</Link>
                   </li>
                   <li className="list-item">
-                    <Link className="item" href="/about" >{t('about-us')}</Link>
+                    <Link className="item" href="/about"onClick={() => setOpenMenu(!openMenu)} >{t('about-us')}</Link>
                   </li>
                   <li className="list-item">
-                    <Link className="item" href="/menu">{t('menu')}</Link>
+                    <Link className="item" href="/menu" onClick={() => setOpenMenu(!openMenu)}>{t('menu')}</Link>
                   </li>
                   <li className="list-item">
-                    <Link className="item" href="/contact-us">{t('contact-us')}</Link>
+                    <Link className="item" href="/contact-us" onClick={() => setOpenMenu(!openMenu)}>{t('contact-us')}</Link>
                   </li>
-                  <li className="list-item">
+                  <li className="list-item language">
                   <LanguageSwitcher className="language-switcher" />
                   </li>
-                </ul>
+                </motion.ul>
               }
             </div>
           </nav>

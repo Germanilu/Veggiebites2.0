@@ -51,6 +51,11 @@
   .navbar{
     padding: .5rem 0rem;
     border-bottom: none;
+    &.open{
+      background-color: #f4f8f9;
+      height: 100vh;
+      z-index: 20;
+    }
     .menu-action{
       margin-right: 1rem;
       width: 100%;
@@ -72,8 +77,10 @@
           justify-content: right;
           padding: .5rem 0rem;
           margin-right: 2rem;
-          .item{
-            border-bottom: 1px solid $black;
+
+          .language-switcher{
+            z-index: 100;
+            border: 1px solid red;
           }
         }
       }
