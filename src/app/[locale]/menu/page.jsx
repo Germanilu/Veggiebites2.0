@@ -1,5 +1,6 @@
 'use client'
 import {motion} from "framer-motion";
+import MenuComponent from '../components/menu'
 import Image from "next/image";
 import signature from '@/static/media/img/signature.png'
 import './page.scss';
@@ -23,6 +24,9 @@ export default function Menu(){
           </div>
         </div>
       </motion.div>
+      <div className="menu-component">
+        <MenuComponent/>
+      </div>
     </div>
   ) 
 }

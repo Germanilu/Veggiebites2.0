@@ -1,0 +1,39 @@
+.menu-box{
+    ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        margin-top: 1rem;
+        li{
+            width: 25%;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    .display{
+        .box{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            .dish-name{
+                margin-left: 1rem;
+                width: 90%;
+                border-bottom: 1px solid #c17631;
+                text-transform: capitalize;
+                padding-bottom: .2rem;
+            }
+            .dish-price{
+                width: 5%;
+                font-size: 14px;
+            }
+            .dish-ingredients{
+                margin-left: 1rem;
+                text-transform: capitalize;
+                font-size: 12px;
+                margin-top: .5rem;
+
+            }
+        }
+    }
+}
