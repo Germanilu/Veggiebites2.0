@@ -52,6 +52,7 @@ export default function Navbar() {
                   open: { x: "0%" },
                   closed: { x: '100%' },
                 }}
+                transition={{delay:.25, duration:0.25}}
                 initial="closed"
                 animate="open"
               >
