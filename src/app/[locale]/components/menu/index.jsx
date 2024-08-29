@@ -1,46 +1,29 @@
+import { useState } from 'react';
+import menuData from '../../../../static/menu'
 import './index.scss';
 
-export default function Menu () {
-    return(
-        <div className='menu-box'>
-            <ul>
-                <li>Antipasti</li>
-                <li>Primi</li>
-                <li>Secondi</li>
-                <li>Dolce</li>
-            </ul>
-            <div className="display">
-                <div className="box">
-                    <span className="dish-name">pesce</span>
-                    <span className="dish-price">88€</span>
-                    <span className="dish-ingredients">ricotta spinaci prezzemolo verdure</span>
-                </div>
-                <div className="box">
-                    <span className="dish-name">pesce</span>
-                    <span className="dish-price">88€</span>
-                    <span className="dish-ingredients">ricotta spinaci prezzemolo verdure</span>
-                </div>
-                <div className="box">
-                    <span className="dish-name">pesce</span>
-                    <span className="dish-price">88€</span>
-                    <span className="dish-ingredients">ricotta spinaci prezzemolo verdure</span>
-                </div>
-                <div className="box">
-                    <span className="dish-name">pesce</span>
-                    <span className="dish-price">88€</span>
-                    <span className="dish-ingredients">ricotta spinaci prezzemolo verdure</span>
-                </div>
-                <div className="box">
-                    <span className="dish-name">pesce</span>
-                    <span className="dish-price">88€</span>
-                    <span className="dish-ingredients">ricotta spinaci prezzemolo verdure</span>
-                </div>
-                <div className="box">
-                    <span className="dish-name">pesce</span>
-                    <span className="dish-price">88€</span>
-                    <span className="dish-ingredients">ricotta spinaci prezzemolo verdure</span>
-                </div>
-            </div>
-        </div>
-    )
+export default function Menu() {
+
+  const [selectedCategory, setSelectedCategory] = useState('Antipasti');
+
+  return (
+    <div className='menu-box'>
+      <ul>
+        {Object.keys(menuData).map((category) => (
+          <li key={category} onClick={() => setSelectedCategory(category)} className={selectedCategory === category ? 'selected-category' : ''}>
+            {category}
+          </li>
+        ))}
+      </ul>
+      <div className="display">
+        {menuData[selectedCategory].map((dish, index) => (
+          <div className="box" key={index}>
+            <span className="dish-name">{dish.name}</span>
+            <span className="dish-price">{dish.price}</span>
+            <span className="dish-ingredients">{dish.ingredients}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }

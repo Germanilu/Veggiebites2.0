@@ -5,9 +5,12 @@
         justify-content: space-around;
         margin-top: 1rem;
         li{
-            width: 25%;
+            width: max-content;
             text-align: center;
             cursor: pointer;
+        }
+        .selected-category{
+            border-bottom: 1px solid #c17631;
         }
     }
     .display{
@@ -19,9 +22,10 @@
             .dish-name{
                 margin-left: 1rem;
                 width: 90%;
-                border-bottom: 1px solid #c17631;
+                border-bottom: 1px solid black;
                 text-transform: capitalize;
                 padding-bottom: .2rem;
+                color: #c17631;
             }
             .dish-price{
                 width: 5%;
