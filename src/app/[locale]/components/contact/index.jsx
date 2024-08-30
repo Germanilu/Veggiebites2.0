@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef, useState }        from "react";
+import {motion}                           from "framer-motion";
 import emailjs                            from "@emailjs/browser";
 import { useTranslations }                from "next-intl";
 
@@ -68,18 +69,50 @@ export default function Contact() {
 
 
   return (
-    <div className='contact-design' >
+    <motion.div className='contact-design' 
+    variants={{
+      hidden:{opacity:0, y:150},
+      visible:{opacity:1,y:0},          
+    }}
+    transition={{delay:.25, duration:0.5}}
+    initial="hidden"
+    animate="visible"
+    >
       <div className="contact-form">
         <div className="texts">
-          <p className='text'>{t('title')}</p>
-          <h3 className='phone'>{t('phone')}</h3>
+          <motion.p className='text'
+          variants={{
+            hidden:{opacity:0, y:0},
+            visible:{opacity:1,y:0},          
+          }}
+          transition={{delay:.5, duration:0.75}}
+          initial="hidden"
+          animate="visible"
+          >{t('title')}</motion.p>
+          <motion.p className='phone'
+          variants={{
+            hidden:{opacity:0, y:0},
+            visible:{opacity:1,y:0},          
+          }}
+          transition={{delay:.5, duration:0.75}}
+          initial="hidden"
+          animate="visible"
+          >{t('phone')}</motion.p>
         </div>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
           className='form'
         >
-          <label className='form-label'>
+          <motion.label className='form-label'
+           variants={{
+            hidden:{opacity:0, y:0},
+            visible:{opacity:1,y:0},          
+          }}
+          transition={{delay:1, duration:0.75}}
+          initial="hidden"
+          animate="visible"
+          >
             <span className='name'>{t('name-tag')}</span>
             <input
               type='text'
@@ -89,8 +122,16 @@ export default function Contact() {
               placeholder={t('name-placeholder')}
               className='input'
             />
-          </label>
-          <label className='form-label'>
+          </motion.label>
+          <motion.label className='form-label'
+          variants={{
+            hidden:{opacity:0, y:0},
+            visible:{opacity:1,y:0},          
+          }}
+          transition={{delay:1.25, duration:0.75}}
+          initial="hidden"
+          animate="visible"
+          >
             <span className='email'>{t('email-tag')}</span>
             <input
               type='email'
@@ -100,8 +141,16 @@ export default function Contact() {
               placeholder={t('email-placeholder')}
               className='input'
             />
-          </label>
-          <label className='form-label'>
+          </motion.label>
+          <motion.label className='form-label'
+            variants={{
+              hidden:{opacity:0, y:0},
+              visible:{opacity:1,y:0},          
+            }}
+            transition={{delay:1.5, duration:0.75}}
+            initial="hidden"
+            animate="visible"
+          >
             <span className='message'>{t('message-tag')}</span>
             <textarea
               rows={7}
@@ -111,25 +160,39 @@ export default function Contact() {
               placeholder={t('message-placeholder')}
               className='input textarea'
             />
-          </label>
+          </motion.label>
 
           <div className="buttons">
-            <div 
+            <motion.div 
               className="cancel-button" 
               onClick={() => setForm({ name: "", email:"",message: "",})}
+              variants={{
+                hidden:{opacity:0, y:0},
+                visible:{opacity:1,y:0},          
+              }}
+              transition={{delay:1.75, duration:0.75}}
+              initial="hidden"
+              animate="visible"
               >
               {t('cancel')}
-            </div>
-            <button
+            </motion.div>
+            <motion.button
               type='submit'
               className='button'
+              variants={{
+                hidden:{opacity:0, y:0},
+                visible:{opacity:1,y:0},          
+              }}
+              transition={{delay:2, duration:0.75}}
+              initial="hidden"
+              animate="visible"
             >
               {loading ? t('loading') : t('send')}
-            </button>
+            </motion.button>
 
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   )
 }

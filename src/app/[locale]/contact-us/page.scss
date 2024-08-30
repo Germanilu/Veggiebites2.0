@@ -1,11 +1,16 @@
 @import "../../utilities/variables.scss";
 
-.contact-us-design{
-    height: 100vh;
+.contact-us-design-page{
+    padding-top: 10rem;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: #f4f8f9;
+    .contact{
+        height: 85vh;
+    }
+    h1{
+        margin: 0 auto;
+    }
 }
 

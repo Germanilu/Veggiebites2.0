@@ -7,7 +7,7 @@
   align-items: center;
   .contact-form{
     background-color: #3e3e3e;;
-    margin-top: 2rem;
+    margin-top: 5rem;
     width: 800px;
     display: flex;
     flex-direction: row;
@@ -100,6 +100,7 @@
 @media (max-width:744px){
   .contact-design{
     width: 90%;
+    margin: 0 auto;
     .contact-form{
       width: 100%;
       flex-direction: column;
