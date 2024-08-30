@@ -18,24 +18,24 @@ export default function Footer() {
       <div className="footer-container">
         <div className="info">
           <div className="info-box">
-            <FaMapMarkerAlt color="#62a5b8" size="40" />
+            <FaMapMarkerAlt color="#eb466b" size="40" />
             <div>
             <p>{t('street')}</p>
             <p>{t('street1')}</p>
             </div>
           </div>
           <div className="info-box">
-            <FaPhone color="#62a5b8" size="40" />
+            <FaPhone color="#eb466b" size="40" />
             <p>{t('phone')}</p>
           </div>
           <div className="info-box">
-            <MdMarkEmailUnread color="#62a5b8" size="40" />
+            <MdMarkEmailUnread color="#eb466b" size="40" />
             <p>{t('email')}</p>
           </div>
           <div className="info-box socials">
-            <FaFacebookSquare color="#62a5b8" size="40" />
-            <FaSquareInstagram color="#62a5b8" size="40" />
-            <FaSquareXTwitter color="#62a5b8" size="40" />
+            <FaFacebookSquare  size="40" className="icon" />
+            <FaSquareInstagram size="40" className="icon"/>
+            <FaSquareXTwitter size="40" className="icon"/>
           </div>
         </div>
         <div className="container">
