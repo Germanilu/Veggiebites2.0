@@ -20,6 +20,12 @@
         "p2":"Somos un equipo que trabaja como una familia, y esa calidez se refleja en la atención que brindamos. Creemos en la importancia de cada pequeño detalle y en la creación de momentos especiales para nuestros comensales.",
         "p3":"Gracias por ser parte de nuestra historia y por permitirnos compartir nuestra pasión contigo."
   },
+  "Menu":{
+    "Antipasti":"Entrantes",
+    "Primi":"Primeros",
+    "Secondi":"Segundos",
+    "Dolci":"Postres"
+  },
   "Contact-us":{
     "title":"Contacta con nosotros"
   },

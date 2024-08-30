@@ -20,6 +20,12 @@
       "p2":"We are a team that works like a family, and this warmth is reflected in the service we provide. We believe in the importance of every little detail and in creating special moments for our customers.",
       "p3":"Thank you for being part of our story and for allowing us to share our passion with you."
     },
+    "Menu":{
+      "Antipasti":"Starters",
+      "Primi":"First courses",
+      "Secondi":"Main courses",
+      "Dolci":"Desserts"
+    },
     "Contact-us":{
       "title":"Contact Us"
     },

@@ -20,7 +20,7 @@ const menuDataes = {
       { name: 'REVUELTO DE SETAS', price: '19€', ingredients: 'Revuelto de setas de temporada, trigueros, ajetes y pimientos del piquillo.' },
       { name: 'PARMIGGIANA DI MELANZANE', price: '17€', ingredients: 'Berenjenas, tomate casero, mozzarella y albahaca.' },
     ],
-    Dolce: [
+    Dolci: [
       { name: 'MOUSSE DE FRESAS Y QUESO FRESCO', price: '7€', ingredients: 'Deliciosa mousse de fresas con crema de queso fresco' },
       { name: 'TIRAMISÙ CASERO', price: '8€', ingredients: 'Tiramisù casero con crema de cafe.' },
       { name: 'PROFITEROLES DE CHOCOLATE', price: '6€', ingredients: 'Profiteroles rellenos de nata con chocolate blanco.' },

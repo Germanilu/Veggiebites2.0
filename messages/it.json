@@ -15,6 +15,12 @@
         "p2":"Siamo un team che lavora come una famiglia, e questo calore si riflette nell'attenzione che offriamo. Crediamo nell'importanza di ogni piccolo dettaglio e nella creazione di momenti speciali per i nostri clienti.",
         "p3":"Grazie per far parte della nostra storia e per permetterci di condividere la nostra passione con te."
       },
+      "Menu":{
+        "Antipasti":"Antipasti",
+        "Primi":"Primi",
+        "Secondi":"Secondi",
+        "Dolci":"Dolci"
+      },
       "Contact-us":{
         "title":"Contattaci"
       },

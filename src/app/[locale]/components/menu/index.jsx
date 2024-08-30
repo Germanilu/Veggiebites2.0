@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslations }  from "next-intl";
 import {motion} from "framer-motion";
 import menuData from '../../../../static/menu';
 import { useLocale }                         from "next-intl";
@@ -7,6 +8,7 @@ import './index.scss';
 
 export default function Menu() {
 
+  const t = useTranslations("Menu");
   const [selectedCategory, setSelectedCategory] = useState('Antipasti');
   const locale = useLocale();
   const [menuDataState, setMenuDataState] = useState(null);
@@ -37,7 +39,7 @@ export default function Menu() {
       <ul>
         {Object.keys(menuDataState).map((category) => (
           <li key={category} onClick={() => setSelectedCategory(category)} className={selectedCategory === category ? 'selected-category' : ''}>
-            {category}
+            {t(category)}
           </li>
         ))}
       </ul>
