@@ -41,9 +41,9 @@ export default function Navbar() {
         <nav className={`navbar ${openMenu ? "open" : ""}`}>
           <div className='menu-action'>
             {openMenu ? (
-              <RxCross2 className='burger-menu-icon' size={40} onClick={toggleMenu} />
+              <RxCross2 className='burger-menu-icon' size={40} onClick={toggleMenu} color='#3e3e3e' />
             ) : (
-              <IoMenu className='burger-menu-icon' size={40} onClick={toggleMenu} />
+              <IoMenu className='burger-menu-icon' size={40} onClick={toggleMenu} color='#3e3e3e'  />
             )}
             {openMenu && (
               <motion.ul
@@ -60,7 +60,10 @@ export default function Navbar() {
                   <Link className="item" href="/" onClick={toggleMenu}>{t('home')}</Link>
                 </li>
                 <li className="list-item">
-                  <Link className="item" href="/about" onClick={toggleMenu}>{t('about-us')}</Link>
+                  <Link className="item" href="/#special" onClick={toggleMenu}>{t('special')}</Link>
+                </li>
+                <li className="list-item">
+                  <Link className="item" href="/#about" onClick={toggleMenu}>{t('about-us')}</Link>
                 </li>
                 <li className="list-item">
                   <Link className="item" href="/menu" onClick={toggleMenu}>{t('menu')}</Link>
