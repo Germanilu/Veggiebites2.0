@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {motion} from "framer-motion";
 import menuData from '../../../../static/menu';
 import { useLocale }                         from "next-intl";
 import './index.scss';
@@ -26,6 +27,11 @@ export default function Menu() {
     }
   },[])
 
+
+  if(!menuDataState){
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className='menu-box'>
       <ul>
@@ -37,11 +43,11 @@ export default function Menu() {
       </ul>
       <div className="display">
         {menuDataState[selectedCategory].map((dish, index) => (
-          <div className="box" key={index}>
+          <motion.div className="box" key={index}>
             <span className="dish-name">{dish.name}</span>
             <span className="dish-price">{dish.price}</span>
             <span className="dish-ingredients">{dish.ingredients}</span>
-          </div>
+          </motion.div >
         ))}
       </div>
     </div>
