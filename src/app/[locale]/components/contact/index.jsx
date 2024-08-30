@@ -114,7 +114,12 @@ export default function Contact() {
           </label>
 
           <div className="buttons">
-            <div className="cancel-button">{t('cancel')}</div>
+            <div 
+              className="cancel-button" 
+              onClick={() => setForm({ name: "", email:"",message: "",})}
+              >
+              {t('cancel')}
+            </div>
             <button
               type='submit'
               className='button'
