@@ -49,14 +49,15 @@
               display: flex;
               justify-content: space-between;
               flex-direction: column;
+              color: white;
               .name,.email,.message{
                 display: none;
               }
               .input{
-                  all: unset;
-                  border-bottom: 1px solid #666;
-                  width: 100%;
-                  text-transform: uppercase;
+                all: unset;
+                border-bottom: 1px solid #666;
+                width: 100%;
+                text-transform: uppercase;
                   padding-bottom: .5rem;
                   &:focus{
                     border-bottom: 1px solid #ddd;

@@ -29,7 +29,7 @@
       .item::after{
         content: "";
         position: absolute;
-        background-color: #c04038;
+        background-color: #eb466b;
         height: 0.1em;
         left: 0;
         width: 0%;
@@ -82,7 +82,6 @@
 
           .language-switcher{
             z-index: 100;
-            border: 1px solid red;
           }
         }
       }
