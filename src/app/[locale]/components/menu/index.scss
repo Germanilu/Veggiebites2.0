@@ -41,3 +41,62 @@
         }
     }
 }
+
+@media (max-width:744px){
+    .menu-box{
+        ul{
+            li{
+                font-size: 14px;
+                font-weight: 700;
+                color: #ddd;
+            }
+            margin-bottom: 3rem;
+        }
+        .display{
+            .box{
+                .dish-name{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #ddd;
+                }
+                .dish-price{
+                    color: #ddd;
+                    font-weight: 400;
+                    
+                }
+                .dish-ingredients{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #eb466b;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:390px){
+    .menu-box{
+        .display{
+            .box{
+                .dish-name{
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #ddd;
+                }
+                .dish-price{
+                    color: #ddd;
+                    font-weight: 400;
+                    margin-left: 1rem;
+                    
+                }
+                .dish-ingredients{
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #eb466b;
+                }
+            }
+        }
+        }
+}
+

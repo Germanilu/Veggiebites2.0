@@ -13,7 +13,7 @@
     .chef-box{
         width: 600px;
         height: 200px;
-        margin-right: 20rem;
+        margin-right: 10rem;
 
         .text{
             display: flex;
@@ -39,7 +39,43 @@
     .menu-component{
         width: 600px;
         height: 300px;
-        margin-right: 5rem;
+        margin-right: 10rem;
         margin-top: 5rem;
     }
 }
+
+@media (max-width:744px){
+    .menu-design{
+        height: 100%;
+        min-height: 100vh;
+        .chef-box{
+            margin: 0 auto;
+            width: 100%;
+            height: max-content;
+            margin-bottom: 5rem;
+            .text{
+                margin: 0 auto;
+                margin-top: 5rem;
+                .chef-title{
+                    font-size: 20px;
+                }
+                .chef-name{
+                    font-size: 24px;
+                }
+                .signature{
+                    display: none;
+                }
+            }
+        }
+        .menu-component{
+            background-color:#3e3e3e;
+            width: 90%;
+            margin: 0 auto;
+            height: auto;
+            padding: 5rem 2rem;
+            
+        }
+    }
+}
+
+
