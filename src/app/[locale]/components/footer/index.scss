@@ -116,6 +116,9 @@
         gap: 2rem;
         margin-top: 0rem;
         font-size: 14px;
+        .text{
+          text-align: center;
+        }
       }
     }
   }
@@ -127,6 +130,14 @@
       flex-direction: column;
       .info{
         margin-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .container{
+        margin-top: 2rem;
+        .info-box{
+          min-width: 80%;
+        }
       }
     }
   }
