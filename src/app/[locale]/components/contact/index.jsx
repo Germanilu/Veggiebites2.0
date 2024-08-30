@@ -70,8 +70,10 @@ export default function Contact() {
   return (
     <div className='contact-design' >
       <div className="contact-form">
-        <p className='text'>{t('title')}</p>
-        <h3 className='subtitle'>{t('subtitle')}</h3>
+        <div className="texts">
+          <p className='text'>{t('title')}</p>
+          <h3 className='phone'>{t('phone')}</h3>
+        </div>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -111,12 +113,16 @@ export default function Contact() {
             />
           </label>
 
-          <button
-            type='submit'
-            className='button'
-          >
-            {loading ? t('loading') : t('send')}
-          </button>
+          <div className="buttons">
+            <div className="cancel-button">{t('cancel')}</div>
+            <button
+              type='submit'
+              className='button'
+            >
+              {loading ? t('loading') : t('send')}
+            </button>
+
+          </div>
         </form>
       </div>
     </div>

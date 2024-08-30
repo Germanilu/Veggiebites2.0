@@ -15,6 +15,21 @@
         "p2":"Siamo un team che lavora come una famiglia, e questo calore si riflette nell'attenzione che offriamo. Crediamo nell'importanza di ogni piccolo dettaglio e nella creazione di momenti speciali per i nostri clienti.",
         "p3":"Grazie per far parte della nostra storia e per permetterci di condividere la nostra passione con te."
       },
+      "Contact-us-component":{
+        "title":"Contatto",
+        "phone":"Telefono: +39 3409999999",
+        "name-tag":"nome",
+        "name-placeholder":"nome",
+        "email-tag":"email",
+        "email-placeholder":"email",
+        "message-tag":"messaggio",
+        "message-placeholder":"messaggio",
+        "send": "Inviare",
+        "loading":"Caricando",
+        "success-alert":"Grazie, ci metteremo in contatto il prima possibile.",
+        "unsuccess-alert":"Qualcosa è andato storto, prova di nuovo",
+        "cancel":"Indietro"
+      },
       "Footer":{
         "street":"Via Mario Lupo 10",
         "street1":"24129 Bergamo Alta BG",

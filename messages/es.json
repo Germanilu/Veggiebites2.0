@@ -25,7 +25,7 @@
   },
   "Contact-us-component":{
     "title":"Contacto",
-    "subtitle":"Subtitulo",
+    "phone":"Telefono: +39 3409999999",
     "name-tag":"name",
     "name-placeholder":"name",
     "email-tag":"email",
@@ -35,7 +35,8 @@
     "send": "Enviar",
     "loading":"Cargando",
     "success-alert":"Gracias. Nos pondremos en contacto contigo tan pronto como sea posible",
-    "unsuccess-alert":"¡Ah, algo salió mal! Por favor, inténtalo de nuevo."
+    "unsuccess-alert":"¡Ah, algo salió mal! Por favor, inténtalo de nuevo.",
+    "cancel":"Atrás"
   },
   "Footer":{
     "street":"Via Mario Lupo 10",
