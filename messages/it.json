@@ -1,51 +1,72 @@
 {
-    "Hero":{
-        "slogan":"Your healthy food"
-      },
-      "Navbar":{
-        "home": "Home",
-        "about-us":"Dicono di Noi",
-        "menu": "Menu",
-        "special":"Specials",
-        "contact-us":"Contatto"
-      },
-      "About":{
-        "title":"La nostra storia",
-        "p1":"Da 15 anni, il nostro ristorante vegetariano è un luogo dove l'amore per il cibo e l'attenzione ai dettagli si uniscono per offrirti un'esperienza autentica. Siamo orgogliosi di fare le cose con la stessa cura del primo giorno, selezionando i migliori ingredienti e curando ogni aspetto di ciò che facciamo.",
-        "p2":"Siamo un team che lavora come una famiglia, e questo calore si riflette nell'attenzione che offriamo. Crediamo nell'importanza di ogni piccolo dettaglio e nella creazione di momenti speciali per i nostri clienti.",
-        "p3":"Grazie per far parte della nostra storia e per permetterci di condividere la nostra passione con te."
-      },
-      "Menu":{
-        "Antipasti":"Antipasti",
-        "Primi":"Primi",
-        "Secondi":"Secondi",
-        "Dolci":"Dolci"
-      },
-      "Contact-us":{
-        "title":"Contattaci"
-      },
-      "Contact-us-component":{
-        "title":"Contatto",
-        "phone":"Telefono: +39 3409999999",
-        "name-tag":"nome",
-        "name-placeholder":"nome",
-        "email-tag":"email",
-        "email-placeholder":"email",
-        "message-tag":"messaggio",
-        "message-placeholder":"messaggio",
-        "send": "Inviare",
-        "loading":"Caricando",
-        "success-alert":"Grazie, ci metteremo in contatto il prima possibile.",
-        "unsuccess-alert":"Qualcosa è andato storto, prova di nuovo",
-        "cancel":"Indietro"
-      },
-      "Footer":{
-        "street":"Via Mario Lupo 10",
-        "street1":"24129 Bergamo Alta BG",
-        "phone":"Telefono: +39 3409999999",
-        "email":"info@veggiebites.com",
-        "rights": "@2024 Tutti i Diritti Riservati a VeggieBites",
-        "privacy": "Informativa sulla Privacy",
-        "conditions": "Termini e Condizioni"
-      }
+  "Hero": {
+    "slogan": "Your healthy food"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about-us": "Dicono di Noi",
+    "menu": "Menu",
+    "special": "Specials",
+    "contact-us": "Contatto"
+  },
+  "About": {
+    "title": "La nostra storia",
+    "p1": "Da 15 anni, il nostro ristorante vegetariano è un luogo dove l'amore per il cibo e l'attenzione ai dettagli si uniscono per offrirti un'esperienza autentica. Siamo orgogliosi di fare le cose con la stessa cura del primo giorno, selezionando i migliori ingredienti e curando ogni aspetto di ciò che facciamo.",
+    "p2": "Siamo un team che lavora come una famiglia, e questo calore si riflette nell'attenzione che offriamo. Crediamo nell'importanza di ogni piccolo dettaglio e nella creazione di momenti speciali per i nostri clienti.",
+    "p3": "Grazie per far parte della nostra storia e per permetterci di condividere la nostra passione con te."
+  },
+  "Specials": {
+    "title": "I Nostri Piatti Speciali",
+    "dish1": "Carciofi in Crema",
+    "dish1desc": "Crema di tuberi di stagione, cipollotto verde e carciofi",
+    "dish1price": "12€",
+    "dish2": "Fatteh di Ceci",
+    "dish2desc": "Yogurt greco, ceci e pane libanese con salsa tahini",
+    "dish2price": "16€",
+    "dish3": "Veggie Burger",
+    "dish3desc": "Burger di melanzane con barbabietola e crema di pomodoro",
+    "dish3price": "14€",
+    "dish4": "Vichyssoise",
+    "dish4desc": "Crema di porri con fichi e agrumi",
+    "dish4price": "11€",
+    "dish5": "Macedonia",
+    "dish5desc": "Mix di frutti esotici con yogurt alla melagrana",
+    "dish5price": "13€",
+    "dish6": "Porridge alla Banana",
+    "dish6desc": "Fiocchi d'avena con banana, vaniglia e semi di chia",
+    "dish6price": "9€"
+  },
+  "Menu": {
+    "Antipasti": "Antipasti",
+    "Primi": "Primi",
+    "Secondi": "Secondi",
+    "Dolci": "Dolci"
+  },
+  "Contact-us": {
+    "title": "Contattaci"
+  },
+  "Contact-us-component": {
+    "title": "Contatto",
+    "phone": "Telefono: +39 3409999999",
+    "name-tag": "nome",
+    "name-placeholder": "nome",
+    "email-tag": "email",
+    "email-placeholder": "email",
+    "message-tag": "messaggio",
+    "message-placeholder": "messaggio",
+    "send": "Inviare",
+    "loading": "Caricando",
+    "success-alert": "Grazie, ci metteremo in contatto il prima possibile.",
+    "unsuccess-alert": "Qualcosa è andato storto, prova di nuovo",
+    "cancel": "Indietro"
+  },
+  "Footer": {
+    "street": "Via Mario Lupo 10",
+    "street1": "24129 Bergamo Alta BG",
+    "phone": "Telefono: +39 3409999999",
+    "email": "info@veggiebites.com",
+    "rights": "@2024 Tutti i Diritti Riservati a VeggieBites",
+    "privacy": "Informativa sulla Privacy",
+    "conditions": "Termini e Condizioni"
+  }
 }

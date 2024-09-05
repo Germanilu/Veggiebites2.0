@@ -1,56 +1,77 @@
 {
-    "Home": {
-      "title": "Main title",
-      "first-section-title": "First section title",
-      "second-section-title": "Second section title"
-    },
-    "Hero":{
-      "slogan":"Your healthy food"
-    },
-    "Navbar":{
-      "home": "Home",
-      "about-us":"About",
-      "menu": "Menu",
-      "special":"Specials",
-      "contact-us":"Contact Us"
-    },
-    "About":{
-      "title":"About Us",
-      "p1":"For 15 years, our vegetarian restaurant has been a place where love for food and attention to detail come together to offer you an authentic experience. We take pride in doing things with the same care as on our first day, selecting the finest ingredients and carefully tending to every aspect of what we do.",
-      "p2":"We are a team that works like a family, and this warmth is reflected in the service we provide. We believe in the importance of every little detail and in creating special moments for our customers.",
-      "p3":"Thank you for being part of our story and for allowing us to share our passion with you."
-    },
-    "Menu":{
-      "Antipasti":"Starters",
-      "Primi":"First courses",
-      "Secondi":"Main courses",
-      "Dolci":"Desserts"
-    },
-    "Contact-us":{
-      "title":"Contact Us"
-    },
-    "Contact-us-component":{
-      "title":"Contact",
-      "phone":"Telefono: +39 3409999999",
-      "name-tag":"name",
-      "name-placeholder":"name",
-      "email-tag":"email",
-      "email-placeholder":"email",
-      "message-tag":"message",
-      "message-placeholder":"message",
-      "send": "Send",
-      "loading":"Loading ...",
-      "success-alert":"Thank you. We will get back to you as soon as possible.",
-      "unsuccess-alert":"Ahh, something went wrong. Please try again.",
-        "cancel":"Cancel"
-    },
-    "Footer":{
-      "street":"Via Mario Lupo 10",
-      "street1":"24129 Bergamo Alta BG",
-      "phone":"Telefono: +39 3409999999",
-      "email":"info@veggiebites.com",
-      "rights":"@2024 All Copyrights Reserved to VeggieBites",
-      "privacy":"Privacy Policy",
-      "conditions":"Terms & Conditions"
-    }
+  "Home": {
+    "title": "Main title",
+    "first-section-title": "First section title",
+    "second-section-title": "Second section title"
+  },
+  "Hero": {
+    "slogan": "Your healthy food"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about-us": "About",
+    "menu": "Menu",
+    "special": "Specials",
+    "contact-us": "Contact Us"
+  },
+  "Specials": {
+    "title": "Our Special Dishes",
+    "dish1": "Artichokes in Cream",
+    "dish1desc": "Seasonal root vegetable cream, green onion, and artichokes",
+    "dish1price": "12€",
+    "dish2": "Chickpea Fatteh",
+    "dish2desc": "Greek yogurt, chickpeas, and Lebanese flatbread with tahini sauce",
+    "dish2price": "16€",
+    "dish3": "Veggie Burger",
+    "dish3desc": "Eggplant burger with beetroot and tomato cream",
+    "dish3price": "14€",
+    "dish4": "Vichyssoise",
+    "dish4desc": "Leek cream with figs and citrus fruits",
+    "dish4price": "11€",
+    "dish5": "Fruit Salad",
+    "dish5desc": "Mix of exotic fruits with pomegranate yogurt",
+    "dish5price": "13€",
+    "dish6": "Banana Porridge",
+    "dish6desc": "Oat flakes with banana, vanilla, and chia seeds",
+    "dish6price": "9€"
+  },
+  "About": {
+    "title": "About Us",
+    "p1": "For 15 years, our vegetarian restaurant has been a place where love for food and attention to detail come together to offer you an authentic experience. We take pride in doing things with the same care as on our first day, selecting the finest ingredients and carefully tending to every aspect of what we do.",
+    "p2": "We are a team that works like a family, and this warmth is reflected in the service we provide. We believe in the importance of every little detail and in creating special moments for our customers.",
+    "p3": "Thank you for being part of our story and for allowing us to share our passion with you."
+  },
+  "Menu": {
+    "Antipasti": "Starters",
+    "Primi": "First courses",
+    "Secondi": "Main courses",
+    "Dolci": "Desserts"
+  },
+  "Contact-us": {
+    "title": "Contact Us"
+  },
+  "Contact-us-component": {
+    "title": "Contact",
+    "phone": "Telefono: +39 3409999999",
+    "name-tag": "name",
+    "name-placeholder": "name",
+    "email-tag": "email",
+    "email-placeholder": "email",
+    "message-tag": "message",
+    "message-placeholder": "message",
+    "send": "Send",
+    "loading": "Loading ...",
+    "success-alert": "Thank you. We will get back to you as soon as possible.",
+    "unsuccess-alert": "Ahh, something went wrong. Please try again.",
+    "cancel": "Cancel"
+  },
+  "Footer": {
+    "street": "Via Mario Lupo 10",
+    "street1": "24129 Bergamo Alta BG",
+    "phone": "Telefono: +39 3409999999",
+    "email": "info@veggiebites.com",
+    "rights": "@2024 All Copyrights Reserved to VeggieBites",
+    "privacy": "Privacy Policy",
+    "conditions": "Terms & Conditions"
   }
+}

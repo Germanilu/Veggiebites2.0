@@ -14,6 +14,27 @@
     "special":"Specials",
     "contact-us":"Contacto"
   },
+  "Specials":{
+    "title":"Nuestros Platos Especiales",
+    "dish1":"Alcachofas en crema",
+    "dish1desc":"Crema de tubérculos de temporada, cebolleta verde y alcachofas",
+    "dish1price":"12€",
+    "dish2":"Fatteh de Garbanzos",
+    "dish2desc":"Yogur griego garbanzos y pan plano libanés con salsa tahini",
+    "dish2price":"16€",
+    "dish3":"Veggie burger",
+    "dish3desc":"Hamburguesa de berenjenas con remolacha y crema de tomate",
+    "dish3price":"14€",
+    "dish4":"Vichyssoise",
+    "dish4desc":"Crema de puerros con higos y frutas cítricas",
+    "dish4price":"11€",
+    "dish5":"Macedonia",
+    "dish5desc":"Mix de frutos exóticos con yogur de granada",
+    "dish5price":"13€",
+    "dish6":"Porridge de plátano",
+    "dish6desc":"Copos de avena con plátano, vainilla y semillas de chía",
+    "dish6price":"9€"
+  },
   "About":{
         "title":"Nuestra Historia",
         "p1":"Desde hace 15 años, nuestro restaurante vegetariano ha sido un lugar donde el amor por la comida y la atención al detalle se combinan para ofrecerte una experiencia auténtica. Nos enorgullece hacer las cosas con el mismo cariño que el primer día, seleccionando los mejores ingredientes y cuidando cada aspecto de lo que hacemos.",

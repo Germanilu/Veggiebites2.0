@@ -18,8 +18,8 @@ const Blog = () => {
       <h2>Blog</h2>
       <div className="articles-container">
         {articles.map((article) => (
-          <Link href={`/blog/${article.slug}`}>
-            <div key={article.id} className="article-container">
+          <Link href={`/blog/${article.slug}`}key={article.id}>
+            <div  className="article-container">
               <h3>{article.title}</h3>
               <p>{article.shortDescription}</p>
             </div>

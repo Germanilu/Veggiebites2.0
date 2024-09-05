@@ -24,56 +24,56 @@ const Specials = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-            <div class="titulo">
-                <h1>Nuestros Platos Especiales</h1>
+            <div className="titulo">
+                <h1>{t('title')}</h1>
             </div>
-            <div class="special-grid reveal-d300">
-                <div class="special bg-effect-img">
+            <div className="special-grid reveal-d300">
+                <div className="special bg-effect-img">
                 <Image className="img-special" src={special1} alt='Alcachofas en crema' width={320} height={180}  objectFit="cover" quality={100}  />
-                    <div class="texto-special bg-effect-txt">
-                        <h3 class="titulo-special reveal-d800">Alcachofas en crema</h3>
-                        <p class="descripcion-special reveal-d1300">Crema de tubérculos de temporada, cebolleta verde y alcachofas </p>
-                        <p class="precio-special reveal-d1500">12€</p>
+                    <div className="texto-special bg-effect-txt">
+                        <h3 className="titulo-special reveal-d800">{t('dish1')}</h3>
+                        <p className="descripcion-special reveal-d1300">{t('dish1desc')} </p>
+                        <p className="precio-special reveal-d1500">{t('dish1price')}</p>
                     </div>
                 </div>
-                <div class="special bg-effect-img">
+                <div className="special bg-effect-img">
                 <Image className="img-special" src={special6} alt='Fatteh de Garbanzos' width={320} height={180}  objectFit="cover" quality={100}  />
-                    <div class="texto-special bg-effect-txt">
-                        <h3 class="titulo-special reveal-d800">Fatteh de Garbanzos</h3>
-                        <p class="descripcion-special reveal-d1300">Yogur griego garbanzos y pan plano libanés con salsa tahini</p>
-                        <p class="precio-special reveal-d1500">16€</p>
+                    <div className="texto-special bg-effect-txt">
+                        <h3 className="titulo-special reveal-d800">{t('dish2')}</h3>
+                        <p className="descripcion-special reveal-d1300">{t('dish2desc')}</p>
+                        <p className="precio-special reveal-d1500">{t('dish2price')}</p>
                     </div>
                 </div>
-                <div class="special bg-effect-img">
+                <div className="special bg-effect-img">
                 <Image className="img-special" src={special3} alt='Veggie burger' width={320} height={180}  objectFit="cover" quality={100}  />
-                    <div class="texto-special bg-effect-txt">
-                        <h3 class="titulo-special reveal-d800">Veggie burger</h3>
-                        <p class="descripcion-special reveal-d1300">Hamburguesa de berenjenas con remolacha y crema de tomate</p>
-                        <p class="precio-special reveal-d1500">14€</p>
+                    <div className="texto-special bg-effect-txt">
+                        <h3 className="titulo-special reveal-d800">{t('dish3')}</h3>
+                        <p className="descripcion-special reveal-d1300">{t('dish3desc')}</p>
+                        <p className="precio-special reveal-d1500">{t('dish3price')}</p>
                     </div>
                 </div>
-                <div class="special bg-effect-img">
+                <div className="special bg-effect-img">
                 <Image className="img-special" src={special5} alt='Vichyssoise' width={320} height={180}  objectFit="cover" quality={100}  />
-                    <div class="texto-special bg-effect-txt">
-                        <h3 class="titulo-special reveal-d800">Vichyssoise</h3>
-                        <p class="descripcion-special reveal-d1300">Crema de puerros con higos y frutas cítricas </p>
-                        <p class="precio-special reveal-d1500">11€</p>
+                    <div className="texto-special bg-effect-txt">
+                        <h3 className="titulo-special reveal-d800">{t('dish4')}</h3>
+                        <p className="descripcion-special reveal-d1300">{t('dish4desc')} </p>
+                        <p className="precio-special reveal-d1500">{t('dish4price')}</p>
                     </div>
                 </div>
-                <div class="special bg-effect-img">
+                <div className="special bg-effect-img">
                 <Image className="img-special" src={special4} alt='Macedonia' width={320} height={180}  objectFit="cover" quality={100}  />
-                    <div class="texto-special bg-effect-txt">
-                        <h3 class="titulo-special reveal-d800">Macedonia</h3>
-                        <p class="descripcion-special reveal-d1300">Mix de frutos exóticos con yogur de granada</p>
-                        <p class="precio-special reveal-d1500">13€</p>
+                    <div className="texto-special bg-effect-txt">
+                        <h3 className="titulo-special reveal-d800">{t('dish5')}</h3>
+                        <p className="descripcion-special reveal-d1300">{t('dish5desc')}</p>
+                        <p className="precio-special reveal-d1500">{t('dish5price')}</p>
                     </div>
                 </div>
-                <div class="special bg-effect-img">
+                <div className="special bg-effect-img">
                 <Image className="img-special" src={special2} alt='Porridge de platano' width={320} height={180}  objectFit="cover" quality={100}  />
-                    <div class="texto-special bg-effect-txt">
-                        <h3 class="titulo-special reveal-d800">Porridge de plátano</h3>
-                        <p class="descripcion-special reveal-d1300">Copos de avena con plátano, vainilla y semillas de chía</p>
-                        <p class="precio-special reveal-d1500">9€</p>
+                    <div className="texto-special bg-effect-txt">
+                        <h3 className="titulo-special reveal-d800">{t('dish6')}</h3>
+                        <p className="descripcion-special reveal-d1300">{t('dish6desc')}</p>
+                        <p className="precio-special reveal-d1500">{t('dish6price')}</p>
                     </div>
                 </div>
             </div>
