@@ -63,28 +63,28 @@ const Carousel = () => {
     >
       <Slider {...settings}>
         <div className="container-div">
-        <Image className="img" src={pict1} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
+        <Image className="img" src={pict1} alt={'veggieBites'} width='100%' height={280}  quality={100}  />
         </div>
         <div>
-        <Image className="img" src={pict2} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
+        <Image className="img" src={pict2} alt={'veggieBites'} width='100%' height={280}  quality={100}  />
         </div>
         <div>
-        <Image className="img" src={pict3} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
+        <Image className="img" src={pict3} alt={'veggieBites'} width='100%' height={280}  quality={100}  />
         </div>
         <div>
-        <Image className="img" src={pict4} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
+        <Image className="img" src={pict4} alt={'veggieBites'} width='100%' height={280}  quality={100}  />
         </div>
         <div>
-        <Image className="img" src={pict5} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
+        <Image className="img" src={pict5} alt={'veggieBites'} width='100%' height={280}  quality={100}  />
         </div>
         <div>
-        <Image className="img" src={pict6} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
+        <Image className="img" src={pict6} alt={'veggieBites'} width='100%' height={280}  quality={100}  />
         </div>
         <div>
-        <Image className="img" src={pict7} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
+        <Image className="img" src={pict7} alt={'veggieBites'} width='100%' height={280}  quality={100}  />
         </div>
         <div>
-        <Image className="img" src={pict8} alt={'veggieBites'} width='100%' height={280}  objectFit="cover" quality={100}  />
+        <Image className="img" src={pict8} alt={'veggieBites'} width='100%' height={280}  quality={100}  />
         </div>
       </Slider>
     </motion.div>

@@ -29,7 +29,7 @@ const Specials = () => {
             </div>
             <div className="special-grid reveal-d300">
                 <div className="special bg-effect-img">
-                <Image className="img-special" src={special1} alt='Alcachofas en crema' width={320} height={180}  objectFit="cover" quality={100}  />
+                <Image className="img-special" src={special1} alt='Alcachofas en crema' width={320} height={180}   quality={100}  />
                     <div className="texto-special bg-effect-txt">
                         <h3 className="titulo-special reveal-d800">{t('dish1')}</h3>
                         <p className="descripcion-special reveal-d1300">{t('dish1desc')} </p>
@@ -37,7 +37,7 @@ const Specials = () => {
                     </div>
                 </div>
                 <div className="special bg-effect-img">
-                <Image className="img-special" src={special6} alt='Fatteh de Garbanzos' width={320} height={180}  objectFit="cover" quality={100}  />
+                <Image className="img-special" src={special6} alt='Fatteh de Garbanzos' width={320} height={180}   quality={100}  />
                     <div className="texto-special bg-effect-txt">
                         <h3 className="titulo-special reveal-d800">{t('dish2')}</h3>
                         <p className="descripcion-special reveal-d1300">{t('dish2desc')}</p>
@@ -45,7 +45,7 @@ const Specials = () => {
                     </div>
                 </div>
                 <div className="special bg-effect-img">
-                <Image className="img-special" src={special3} alt='Veggie burger' width={320} height={180}  objectFit="cover" quality={100}  />
+                <Image className="img-special" src={special3} alt='Veggie burger' width={320} height={180}   quality={100}  />
                     <div className="texto-special bg-effect-txt">
                         <h3 className="titulo-special reveal-d800">{t('dish3')}</h3>
                         <p className="descripcion-special reveal-d1300">{t('dish3desc')}</p>
@@ -53,7 +53,7 @@ const Specials = () => {
                     </div>
                 </div>
                 <div className="special bg-effect-img">
-                <Image className="img-special" src={special5} alt='Vichyssoise' width={320} height={180}  objectFit="cover" quality={100}  />
+                <Image className="img-special" src={special5} alt='Vichyssoise' width={320} height={180}   quality={100}  />
                     <div className="texto-special bg-effect-txt">
                         <h3 className="titulo-special reveal-d800">{t('dish4')}</h3>
                         <p className="descripcion-special reveal-d1300">{t('dish4desc')} </p>
@@ -61,7 +61,7 @@ const Specials = () => {
                     </div>
                 </div>
                 <div className="special bg-effect-img">
-                <Image className="img-special" src={special4} alt='Macedonia' width={320} height={180}  objectFit="cover" quality={100}  />
+                <Image className="img-special" src={special4} alt='Macedonia' width={320} height={180}   quality={100}  />
                     <div className="texto-special bg-effect-txt">
                         <h3 className="titulo-special reveal-d800">{t('dish5')}</h3>
                         <p className="descripcion-special reveal-d1300">{t('dish5desc')}</p>
@@ -69,7 +69,7 @@ const Specials = () => {
                     </div>
                 </div>
                 <div className="special bg-effect-img">
-                <Image className="img-special" src={special2} alt='Porridge de platano' width={320} height={180}  objectFit="cover" quality={100}  />
+                <Image className="img-special" src={special2} alt='Porridge de platano' width={320} height={180}   quality={100}  />
                     <div className="texto-special bg-effect-txt">
                         <h3 className="titulo-special reveal-d800">{t('dish6')}</h3>
                         <p className="descripcion-special reveal-d1300">{t('dish6desc')}</p>
