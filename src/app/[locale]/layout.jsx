@@ -5,12 +5,16 @@ import { Montserrat }                             from "next/font/google";
 import { useLocale }                         from "next-intl";
 import { notFound }                          from "next/navigation";
 import { Providers }                         from "../Redux/provider";
+import favicon                               from '../public/favicon.ico'
 import "./globals.css";
 const mettiweather = Montserrat({ subsets: ["latin"], weight: ['300','400', '700','900'] });
 
 export const metadata = {
-  title: "Default title",
+  title: "Veggie Bites",
   description: "Default description",
+  icons: {
+    icon: favicon.src, 
+  }
 };
 
 export default function RootLayout({ children, params }) {

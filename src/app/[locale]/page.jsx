@@ -6,7 +6,7 @@ import AboutUs from "./components/about-us";
 import './page.scss';
 
 export const metadata = {
-  title:"Home title",
+  title:"Veggie Bites",
   description:"home metadata description"
 }
 
